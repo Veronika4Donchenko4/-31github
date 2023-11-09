@@ -30,12 +30,15 @@ function App() {
     }))
   }
 
+  const comletedTodosCount = todos.filter((todo) => todo.isComleted)
+
   return (
     <div className="App">
       <TodoForm addTodo={addTodoHandler} />
       <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleToDo={toggleTodoHandler}/>
+    {comletedTodosCount > 0 && <h2>{`You have completed ${comletedTodosCount} todos`}</h2>}
     </div>
-  );
+  )
 }
 
 export default App;
