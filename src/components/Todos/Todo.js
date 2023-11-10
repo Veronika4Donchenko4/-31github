@@ -4,7 +4,10 @@ import styles from './Todo.module.css';
 
 const Todo = ({ todo, deleteTodo, toggleTodo }) => {
   return (
+
     <div className={styles.todo} >
+      <h2>gvjhbvm</h2>
+      <div>jhbjb</div>
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.todoText}>{todo.text}</div>
       <RiDeleteBin2Line className={styles.deleteIcon} onClick={() => deleteTodo(todo.id)}/>
