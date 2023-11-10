@@ -4,7 +4,6 @@ import styles from './Todo.module.css';
 
 const Todo = ({ todo, deleteTodo, toggleTodo }) => {
   return (
-
     <div className={styles.todo} >
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.todoText}>{todo.text}</div>
