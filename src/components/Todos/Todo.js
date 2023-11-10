@@ -8,6 +8,8 @@ const Todo = ({ todo, deleteTodo, toggleTodo }) => {
     <div className={styles.todo} >
       <h2>gvjhbvm</h2>
       <div>jhbjb</div>
+      <h2>gfjsdcnkjn</h2>
+      <div>hbfkjdcnladsm</div>
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.todoText}>{todo.text}</div>
       <RiDeleteBin2Line className={styles.deleteIcon} onClick={() => deleteTodo(todo.id)}/>
