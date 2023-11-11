@@ -14,7 +14,8 @@ function App() {
       isCompleted: false,
       id: uuidv4(),
     };
-
+    
+    console.log(newTodo)
     setTodos([...todos, newTodo ]);
   };
 
