@@ -1,11 +1,10 @@
-
 const TodosActions = () => {
-    return(
-        <>
-        <button></button>
-        <button></button>
-        </>
-    )
-}
+  return (
+    <>
+      <button>Reset</button>
+      <button>Delete Completed</button>
+    </>
+  );
+};
 
-export default TodosActions
+export default TodosActions;
