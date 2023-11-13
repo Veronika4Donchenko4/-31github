@@ -1,8 +1,23 @@
-const TodosActions = () => {
+import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
+import Button from '../UI/Button';
+
+const TodosActions = ({
+  resetTodos,
+  deleteCompletedTodos,
+  comletedTodosExist,
+}) => {
   return (
     <>
-      <button>Reset</button>
-      <button>Delete Completed</button>
+      <Button title="Reset Todos" onClick={resetTodos}>
+        <RiRefreshLine />
+      </Button>
+      <Button
+        title="Clear Completed Todos"
+        onClick={deleteCompletedTodos}
+        disabled={!comletedTodosExist}
+      >
+        <RiDeleteBin2Line />
+      </Button>
     </>
   );
 };
