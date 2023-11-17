@@ -15,6 +15,7 @@ const TodoList = ({ todos, deleteTodo, toggleTodo }) => {
         // edit task text function 
         // grouping tasks by category
         // deadline
+        // improve UI
       ))}
     </div>
   );
