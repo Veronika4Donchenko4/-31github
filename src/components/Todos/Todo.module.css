@@ -12,10 +12,17 @@
   padding: 10px;
 }
 
+.todo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .todoText {
   width: 100%;
   text-align: left;
 }
+
+
 
 .todoIcon {
   font-size: 1.8rem;
