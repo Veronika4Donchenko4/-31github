@@ -6,6 +6,12 @@
 body {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: rgb(254, 241, 255);
-  background-color: #8c388f;
+    margin: 0;
+    height: 100vh; 
+    background: linear-gradient(to bottom, #FFC0CB, #FFFFFF); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gray;
 }

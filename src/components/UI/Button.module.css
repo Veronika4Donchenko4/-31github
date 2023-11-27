@@ -7,8 +7,9 @@
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  hover: 10px;
 }
 
 .button:hover {
-  background-color: rgb(240, 240, 155);
+  background-color: gray;
 }
