@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import TodosActions from './components/Todos/TodosActions';
+import Calendar from './screen/Calendar';
 import './App.css';
 import './index.css';
 
@@ -64,6 +65,7 @@ function App() {
             comletedTodosCount > 1 ? 'todos' : 'todo'
           }`}</h2>
         )}
+        <Calendar />
       </div>
     </BrowserRouter>
   );
