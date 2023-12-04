@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/Todos/TodoForm';
@@ -65,7 +65,14 @@ function App() {
             comletedTodosCount > 1 ? 'todos' : 'todo'
           }`}</h2>
         )}
-        <Calendar />
+
+          <Router>
+              <div>
+                <Routes>
+                  <Route path="/calendar" element={<Calendar />} />
+                </Routes>
+              </div>
+            </Router>
       </div>
     </BrowserRouter>
   );
