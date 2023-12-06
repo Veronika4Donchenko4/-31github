@@ -46,7 +46,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">TODO
+      <div className="App">
         <TodoForm addTodo={addTodoHandler} />
         {!!todos.length && (
           <TodosActions
@@ -65,14 +65,6 @@ function App() {
             comletedTodosCount > 1 ? 'todos' : 'todo'
           }`}</h2>
         )}
-
-          <Router>
-              <div>
-                <Routes>
-                  <Route path="/calendar" element={<Calendar />} />
-                </Routes>
-              </div>
-            </Router>
       </div>
     </BrowserRouter>
   );
