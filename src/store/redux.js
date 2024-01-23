@@ -17,7 +17,6 @@ const toggleAllTodos = () => ({ type: 'TOGGLE_ALL_TODOS' });
 
 const todoReducer = (state = [], action) => {
   switch (action.type) {
-    // ... (остальной код)
     case 'TOGGLE_ALL_TODOS':
       const allCompleted = state.every(todo => todo.completed);
       return state.map(todo => ({ ...todo, completed: !allCompleted }));
