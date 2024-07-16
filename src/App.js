@@ -45,6 +45,7 @@ function App() {
   return (
     <div className="App">
       <TodoForm addTodo={addTodoHandler} />
+      {console.log(comletedTodosCount)}
       {!!todos.length && (
         <TodosActions
           comletedTodosExist={!!comletedTodosCount}
