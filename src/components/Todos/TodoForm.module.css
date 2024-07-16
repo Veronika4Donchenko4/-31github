@@ -1,30 +1,31 @@
 .todoFormContainer {
   margin-bottom: 30px;
+  box-shadow: 30px;
 }
 
 .input {
   padding: 10px 20px;
-  margin: 20px 20px;
+  margin: 10px 10px;
   font-size: 1.5rem;
   border-radius: 5px;
 }
 
 .input::placeholder {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .myBtn {
-  width: 75px;
-  height: 45px;
-  border-radius: 5px;
+  width: 75x;
+  height: 47px;
+  border-radius: 7px;
   border: none;
-  background-color: antiquewhite;
+  background-color: #Fe90BC;
   cursor: pointer;
 }
 
 .toDo {
   text-align: center;
-  color: aliceblue;
+  color: gray;
   font-size: 40px;
   margin-bottom: 20px;
   margin-top: 20px;

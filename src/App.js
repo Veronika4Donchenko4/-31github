@@ -1,8 +1,10 @@
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import TodosActions from './components/Todos/TodosActions';
+import Calendar from './screen/Calendar';
 import './App.css';
 import './index.css';
 
@@ -43,27 +45,28 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <TodoForm addTodo={addTodoHandler} />
-      {console.log(comletedTodosCount)}
-      {!!todos.length && (
-        <TodosActions
-          comletedTodosExist={!!comletedTodosCount}
-          resetTodos={resetTodosHandler}
-          deleteCompletedTodos={deleteCompletedTodosHandler}
+    <BrowserRouter>
+      <div className="App">
+        <TodoForm addTodo={addTodoHandler} />
+        {!!todos.length && (
+          <TodosActions
+            comletedTodosExist={!!comletedTodosCount}
+            resetTodos={resetTodosHandler}
+            deleteCompletedTodos={deleteCompletedTodosHandler}
+          />
+        )}
+        <TodoList
+          todos={todos}
+          deleteTodo={deleteTodoHandler}
+          toggleTodo={toggleTodoHandler}
         />
-      )}
-      <TodoList
-        todos={todos}
-        deleteTodo={deleteTodoHandler}
-        toggleTodo={toggleTodoHandler}
-      />
-      {comletedTodosCount > 0 && (
-        <h2>{`You have completed ${comletedTodosCount} ${
-          comletedTodosCount > 1 ? 'todos' : 'todo'
-        }`}</h2>
-      )}
-    </div>
+        {comletedTodosCount > 0 && (
+          <h2>{`You have completed ${comletedTodosCount} ${
+            comletedTodosCount > 1 ? 'todos' : 'todo'
+          }`}</h2>
+        )}
+      </div>
+    </BrowserRouter>
   );
 }
 

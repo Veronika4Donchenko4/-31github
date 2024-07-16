@@ -7,13 +7,22 @@
   border-radius: 5px;
   border: 2px solid #555;
   color: #112d49;
-  background-color: #fbfef9;
+  background-color: hsl(96, 71%, 99%);
+  box-shadow: '0 0 10px rgba(0, 0, 0, 0.1)';
+  padding: 10px;
+}
+
+.todo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .todoText {
   width: 100%;
   text-align: left;
 }
+
+
 
 .todoIcon {
   font-size: 1.8rem;
