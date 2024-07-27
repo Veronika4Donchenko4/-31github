@@ -12,7 +12,7 @@ const TodosActions = ({
         <RiRefreshLine />
       </Button>
       <Button
-        title="You can clear Completed Todos"
+        title="Clear Completed Todos"
         onClick={deleteCompletedTodos}
         disabled={!comletedTodosExist}
       >

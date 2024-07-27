@@ -4,12 +4,11 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/Todos/TodoForm';
 import TodoList from './components/Todos/TodoList';
 import TodosActions from './components/Todos/TodosActions';
-import Calendar from './screen/Calendar';
 import './App.css';
 import './index.css';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]); 
 
   const addTodoHandler = (text) => {
     const newTodo = {
@@ -34,15 +33,16 @@ function App() {
     );
   };
 
-  const comletedTodosCount = todos.filter((todo) => todo.isCompleted).length;
 
   const resetTodosHandler = () => {
     setTodos([]);
   };
 
   const deleteCompletedTodosHandler = () => {
-    setTodos(todos.filter((todo) => !todo.isCompleted));
+    setTodos(todos.filter((todo) => !todo.isCompleted));  
   };
+
+  const comletedTodosCount = todos.filter((todo) => todo.isCompleted).length;
 
   return (
     <BrowserRouter>
